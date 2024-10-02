@@ -38,3 +38,11 @@ def is_leap(year):
 
 year = int(input())
 print(is_leap(year))
+
+
+given an integer n, without using any string methods, try to print the following: 123
+
+n = int(input())
+for i in range(1, n + 1):
+    print(i, end='') # end='' Print numbers without a newline
+
