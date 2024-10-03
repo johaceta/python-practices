@@ -46,3 +46,20 @@ n = int(input())
 for i in range(1, n + 1):
     print(i, end='') # end='' Print numbers without a newline
 
+Check if a string is palindrome 
+
+ slicing syntax is sequence[start:stop:step]
+ [::-1] means: Start at the end (the minus does that for you), end when nothing's left and walk backwards by 1.
+ 
+def palindrome(str_word):
+    reservedWord = str_word[::-1].lower()
+    if (str_word.lower() == reservedWord):
+        return True
+    else:
+        return False
+
+
+userInput = input()
+isPalindrome = palindrome(userInput)
+print(isPalindrome)
+
